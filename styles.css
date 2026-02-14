@@ -1,0 +1,169 @@
+/* General Guidelines:
+   - Use the provided purple color (#6f5eff) where applicable.
+   - The default font family for HW1 should be Arial, sans-serif.
+*/
+
+/* Typography: */
+/* 
+"House Design" title 
+    font-size: 1.5rem;
+    font-weight: bold;
+"House Styling" title 
+    font-size: 20px;
+Footer section headings: 'Store Info', 'About', 'Account', 'Policy'
+    font-size: 14px;
+Footer content 
+    font-size: 12px;
+For all other text, if not specified above, an approximate font size is acceptable. 
+*/
+
+/* TO-DO */
+
+* {
+    font-family: Arial, sans-serif;
+}
+
+/* Reset default margin and padding for all elements */
+body {
+    margin: 0;
+}
+
+/* Header Section */
+.title1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav {
+    background-color: rgba(248, 247, 247, 0.986);
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px;
+    border: 1px solid gainsboro;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;    
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.nav li {
+    display: inline;
+    padding: 20px;
+}
+
+.nav a {
+    font-size: 1rem;
+    font-weight: 545;
+    text-decoration: none;
+    color: gray;
+    padding : 80px;
+}
+
+
+.parallax {
+    background-image: url('image/background.jpg');
+    min-height: 800px;
+    margin: 0 75px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section1-title {
+    font-size: 20px;
+    color: #6f5eff;
+    margin-top: 50px;
+    margin-left: 75px;
+}
+
+.section1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 0 75px;
+    margin-bottom: 120px;
+}
+
+.section1 div {
+    padding: 20px;
+    margin-top: 10px;
+    border: 1px solid rgb(202, 201, 201);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.138);
+}
+
+.section1 p {
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.section1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    
+}
+
+.section1 button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #6f5eff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.section1 button:hover {
+    background-color: rgb(63, 63, 63);
+}
+
+/* Footer Section */
+.footer {
+    background-color: rgba(248, 247, 247, 0.986);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 0;
+    font-size: 12px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.footer-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer button {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #6f5eff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.follow-us {
+    width: 100%;
+    text-align:left;
+    margin-top: 10px;
+    margin-left: 120px;
+}
